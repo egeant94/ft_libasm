@@ -6,7 +6,7 @@ ft_strcmp:
 			mov				rax,0					; rax = return value
 			jmp				compare					; skipping the increment
 increment:
-			inc rcx									; incrementing i
+			inc				rcx						; incrementing i
 compare:
 			mov				dl, BYTE [rdi + rcx]	; moving s1[i] into a temp char
 			cmp				dl, 0					; comparing it to 0 (null char)
